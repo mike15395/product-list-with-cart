@@ -6,8 +6,8 @@ function App() {
 
   return (
     <main className='flex flex-row gap-8 m-[88px]'>
-      <Dessert />
-      <Cart />
+        <Dessert />
+        <Cart />
     </main>
   )
 }
