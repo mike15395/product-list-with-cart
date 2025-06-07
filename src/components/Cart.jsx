@@ -7,7 +7,7 @@ import {  CartContext } from '../context/CartContext'
 function Cart() {
 
 
-   const {cartItems,removeFromCart} =useContext(CartContext)
+   const {cartItems,removeFromCart,setIsOpen} =useContext(CartContext)
    let total=0
    cartItems.length>0 && cartItems?.map((i)=>(total=total+i.price*i.quantity))
   
@@ -31,7 +31,7 @@ function Cart() {
             
             <div className='flex flex-row gap-34 mt-6 items-center'><span className='text-[#260F08]'>Order Total</span><span className='text-[#260F08] font-extrabold text-3xl'>${total}</span></div>
             <div className='flex flex-row gap-2 items-center justify-center mt-6'><img src={carbonNeutralIcon} alt="carbon-neutral-icon" /> <p>This is a <b>carbon-neutral</b> delivery</p></div>
-            <button className='bg-[#C73B0F] text-white p-4 rounded-4xl border-none w-full mt-6 cursor-pointer'>Confirm Order</button>
+            <button className='bg-[#C73B0F] text-white p-4 rounded-4xl border-none w-full mt-6 cursor-pointer'onClick={()=>setIsOpen(true)}>Confirm Order</button>
           </div>
           
             :
