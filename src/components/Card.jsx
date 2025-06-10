@@ -41,14 +41,14 @@ function Card({ category, name, price, imgSrc, obj }) {
         {inCart ? (
           <button className="absolute text-white bottom-[-25px] left-14 flex flex-row items-center gap-6 pt-2 pb-2 pr-4 pl-4 rounded-4xl cursor-pointer bg-[#C73B0F]">
             <img
-              src="../../public/assets/images/icon-decrement-quantity.svg"
+              src="./assets/images/icon-decrement-quantity.svg"
               onClick={decrement}
               alt="decrement-icon"
               className="border-2 border-white pt-2 pb-2 pr-1 pl-1 rounded-full"
             />
             {quantity}
             <img
-              src="../../public/assets/images/icon-increment-quantity.svg"
+              src="./assets/images/icon-increment-quantity.svg"
               onClick={increment}
               alt="increment-icon"
               className="border-2 border-white p-1 rounded-full"
@@ -60,7 +60,7 @@ function Card({ category, name, price, imgSrc, obj }) {
             className="absolute bottom-[-25px] left-14  bg-white flex flex-row gap-1 pt-2 pb-2 pr-4 pl-4 rounded-4xl cursor-pointer border border-[#AD8A85]  hover:border-[#C73B0F]"
           >
             <img
-              src="../../public/assets/images/icon-add-to-cart.svg"
+              src="./assets/images/icon-add-to-cart.svg"
               alt="icon-add-to-cart"
               className="w-5 h-5"
             />
