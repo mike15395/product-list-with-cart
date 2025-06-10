@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import confirmIcon from "../assets/images/icon-order-confirmed.svg"
+import confirmIcon from "../../public/assets/images/icon-order-confirmed.svg"
 import { CartContext } from '../context/CartContext'
 
 //order confirmation modal

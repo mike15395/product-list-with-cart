@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
-import emptyCart from "../assets/images/illustration-empty-cart.svg"
-import deleteIcon from "../assets/images/icon-remove-item.svg"
-import carbonNeutralIcon from "../assets/images/icon-carbon-neutral.svg"
+import emptyCart from "../../public/assets/images/illustration-empty-cart.svg"
+import deleteIcon from "../../public/assets/images/icon-remove-item.svg"
+import carbonNeutralIcon from "../../public/assets/images/icon-carbon-neutral.svg"
 import {  CartContext } from '../context/CartContext'
 
 function Cart() {

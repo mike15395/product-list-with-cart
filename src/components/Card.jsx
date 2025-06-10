@@ -1,7 +1,7 @@
 import React, {  useContext } from 'react'
- import addToCartIcon from "../assets/images/icon-add-to-cart.svg"
-import incrementIcon from "../assets/images/icon-increment-quantity.svg"
-import decrementIcon from "../assets/images/icon-decrement-quantity.svg"
+ import addToCartIcon from "../../public/assets/images/icon-add-to-cart.svg"
+import incrementIcon from "../../public/assets/images/icon-increment-quantity.svg"
+import decrementIcon from "../../public/assets/images/icon-decrement-quantity.svg"
 import { CartContext } from '../context/CartContext.jsx'
 
 function Card({ category, name, price, imgSrc, obj }) {
