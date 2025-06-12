@@ -10,7 +10,7 @@ cartItems.length>0 && cartItems?.map((i)=>(total=total+i.price*i.quantity))
   
 
   return (
-    <article className='absolute top-[20%] left-[30%]  z-1 bg-white w-[40vw] h-fit rounded-2xl'>
+    <article className='absolute top-[20%] left-[30%]  z-1 bg-white w-[40vw] h-fit rounded-2xl max-sm:w-fit'>
         <div className='flex flex-col gap-8 p-10 '>
             <section className='flex flex-col justify-items-start gap-6'>
                 <img  src="./assets/images/icon-order-confirmed.svg" alt="icon-order-confirmed" className='w-11 h-11'/>

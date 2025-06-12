@@ -36,7 +36,12 @@ function Card({ category, name, price, imgSrc, obj }) {
   return (
     <div className="flex flex-col gap-9 sm:mb-12">
       <div className="relative">
-        <img src={imgSrc} alt={name} className={inCart ? withBorder : withoutBorder} />
+        {/* <img src={imgSrc} alt={name} className={inCart ? withBorder : withoutBorder} /> */}
+        <picture>
+          <source  media="(min-width: 1024px)" srcset={imgSrc?.desktop}/>
+          <source media="(min-width: 640px)" srcset={imgSrc?.tablet}/>
+          <img src={imgSrc?.mobile} alt="food-image" className={inCart ? withBorder : withoutBorder}/>
+        </picture>
 
         {inCart ? (
           <button className="absolute text-white bottom-[-25px] left-14 flex flex-row items-center gap-6 pt-2 pb-2 pr-4 pl-4 rounded-4xl cursor-pointer bg-[#C73B0F]">
